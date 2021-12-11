@@ -21,7 +21,7 @@ body {
     rgba(20, 20, 20, 1) 100%
   );
 }
-.card-container {
+.card__container {
   width: 225px;
   height: 350px;
   background: linear-gradient(
@@ -33,8 +33,9 @@ body {
   display: flex;
   justify-content: space-around;
   position: relative;
+  box-shadow: 2px 5px 5px rgb(0,0,0,0.6)
 }
-.add-icon {
+.add__icon {
   font-size: 30px;
 }
 .number {
@@ -42,13 +43,13 @@ body {
   font-weight: 300;
   color: white;
 }
-.minicard-container {
+.minicard__container {
   align-self: center;
   position: relative;
   display: flex;
   justify-content: center;
 }
-.mini-card {
+.mini__card {
   width: 30px;
   height: 45px;
   background: none;
@@ -76,4 +77,23 @@ body {
 .top,
 .bottom {
   position: absolute;
+}
+.main__container{
+  display: flex;
+  flex-direction: column;
+}
+.btn__card-change{
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background:rgba(35, 252, 64, 0.897);
+  cursor: pointer;
+  box-shadow: 2px 5px 5px rgb(0,0,0,0.6)
+}
+.btn__card-change:active{
+  background:rgba(14, 14, 14, 0.671) ;
 }
