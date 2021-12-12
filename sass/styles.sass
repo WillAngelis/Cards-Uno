@@ -1,0 +1,95 @@
+$primary-font: "Roboto", sans-serif
+$black-gradient : linear-gradient(127deg,rgba(29, 29, 29, 1) 0%,rgba(20, 20, 20, 1) 100%)
+$lemon-gradient : linear-gradient(to top,rgb(32, 223, 15) 0%,#00812b 100%)
+$green-gradient : linear-gradient(to bottom,rgb(16, 197, 0) 0%,rgba(8, 255, 90, 1) 100%)
+$black-shadow : 2px 5px 5px rgb(0,0,0,0.6)
+$margin : 1.25rem
+$color-secondary : rgba(14, 14, 14, 0.671)
+$color-white : rgb(255, 255, 255)
+$centralizar : center
+// reset css
+html,
+body,
+p,
+div,
+span 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: $primary-font
+
+//Display Flex
+body,
+.card__container,
+.minicard__container,
+.main__container
+  display: flex
+
+//Alinhamento ao centro
+body,
+.minicard__container
+  justify-content: $centralizar
+
+body 
+  height: 100vh
+  align-items: $centralizar
+  background: $black-gradient
+
+.card__container
+  width: 14rem
+  height: 20rem
+  background: $green-gradient
+  border-radius: 1rem
+  justify-content: space-around
+  position: relative
+  box-shadow: $black-shadow
+  .add__icon
+    font-size: 1.85rem
+  .number
+    font-size: 2.18rem
+    font-weight: 300
+    color: $color-white
+  .minicard__container
+    align-self: $centralizar
+    position: relative
+    .mini__card
+      width: 1.87rem
+      height: 2.8rem
+      border: 2px solid $color-white
+      border-radius: 5px
+  .top
+    top: $margin
+    left: $margin
+  .bottom
+    bottom: $margin
+    right: 1.875rem
+  .left
+    right: -0.625rem
+    top: -1.25rem
+  .right
+    left: 0
+    bottom: 0
+  
+  .right,
+  .left,
+  .top,
+  .bottom
+    position: absolute
+
+.main__container
+  flex-direction: column
+  .btn__card-change
+    padding: 10px
+    margin-top: 10px
+    border-radius: 5px
+    border: none
+    font-size: 1em
+    font-weight: 600
+    color: $color-white
+    background: $lemon-gradient
+    cursor: pointer
+    box-shadow: $black-shadow
+  .btn__card-change:active
+    background: $color-secondary
+
+
