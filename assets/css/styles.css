@@ -31,6 +31,7 @@ body {
 .card__container {
   width: 13rem;
   height: 20rem;
+  background: linear-gradient(to left, #00bf40, #29f56d);
   border-radius: 1rem;
   justify-content: space-around;
   position: relative;
