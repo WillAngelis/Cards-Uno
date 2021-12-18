@@ -49,31 +49,32 @@ body,
 
 body 
   height: 100vh
+  flex-direction: column 
   align-items: $centralizar
   background: $background
 
 .card__container
-  width: 13rem
-  height: 20rem
+  width: 18rem
+  height: 29rem
   background: $green-card
   border-radius: 1rem
   justify-content: space-around
   position: relative
   box-shadow: $shadow
   .add__icon
-    font-size: 1.85rem
+    font-size: 2.85rem
   .number
-    font-size: 2.18rem
+    font-size: 3.5rem
     font-weight: 300
     color: $color-white
   .minicard__container
     align-self: $centralizar
     position: relative
     .mini__card
-      width: 2.4rem
-      height: 3.6rem
-      border: 2px solid $color-white
-      border-radius: 5px
+      width: 3.2rem
+      height: 4.9rem
+      border: 3px solid $color-white
+      border-radius: 6px
   .top
     top: $margin
     left: $margin
@@ -98,7 +99,7 @@ body
   .buttons
     display: flex
     justify-content: space-between
-    width: 13rem
+    width: 100%
     &--green
       background: $green-card
       &:active
@@ -144,4 +145,9 @@ body
 .card__4
   background: $black-card
 
-
+footer 
+  margin: 40px 0 0 0
+  a
+    font-size: 14px
+    color: $color-white
+    text-decoration: none

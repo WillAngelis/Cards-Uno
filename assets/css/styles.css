@@ -24,13 +24,14 @@ body,
 
 body {
   height: 100vh;
+  flex-direction: column;
   align-items: center;
   background: linear-gradient(to right, #000000, #1b1818);
 }
 
 .card__container {
-  width: 13rem;
-  height: 20rem;
+  width: 18rem;
+  height: 29rem;
   background: linear-gradient(to left, #00bf40, #29f56d);
   border-radius: 1rem;
   justify-content: space-around;
@@ -38,10 +39,10 @@ body {
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
 }
 .card__container .add__icon {
-  font-size: 1.85rem;
+  font-size: 2.85rem;
 }
 .card__container .number {
-  font-size: 2.18rem;
+  font-size: 3.5rem;
   font-weight: 300;
   color: white;
 }
@@ -50,10 +51,10 @@ body {
   position: relative;
 }
 .card__container .minicard__container .mini__card {
-  width: 2.4rem;
-  height: 3.6rem;
-  border: 2px solid white;
-  border-radius: 5px;
+  width: 3.2rem;
+  height: 4.9rem;
+  border: 3px solid white;
+  border-radius: 6px;
 }
 .card__container .top {
   top: 1.25rem;
@@ -84,7 +85,7 @@ body {
 .main__container .buttons {
   display: flex;
   justify-content: space-between;
-  width: 13rem;
+  width: 100%;
 }
 .main__container .buttons--green {
   background: linear-gradient(to left, #00bf40, #29f56d);
@@ -148,6 +149,15 @@ body {
 
 .card__4 {
   background: linear-gradient(to left, #1b1b1b, #0f0f0f);
+}
+
+footer {
+  margin: 40px 0 0 0;
+}
+footer a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
