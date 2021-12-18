@@ -31,7 +31,6 @@ body {
 .card__container {
   width: 13rem;
   height: 20rem;
-  background: linear-gradient(to left, #00bf40, #29f56d);
   border-radius: 1rem;
   justify-content: space-around;
   position: relative;
@@ -50,8 +49,8 @@ body {
   position: relative;
 }
 .card__container .minicard__container .mini__card {
-  width: 1.87rem;
-  height: 2.8rem;
+  width: 2.4rem;
+  height: 3.6rem;
   border: 2px solid white;
   border-radius: 5px;
 }
@@ -99,7 +98,7 @@ body {
   background: linear-gradient(to top, #00c8ffd3, #0073ffde);
 }
 .main__container .buttons--yellow {
-  background: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  background: linear-gradient(315deg, #fbb034 0%, #ffb01d 74%);
 }
 .main__container .buttons--yellow:active {
   background: linear-gradient(315deg, #fbaf34d8 0%, #ffdd00d7 74%);
@@ -111,10 +110,10 @@ body {
   background: linear-gradient(to top, #cb2d3de3, #ef463ada);
 }
 .main__container .buttons--black {
-  background: linear-gradient(to left, #232526, #414345);
+  background: linear-gradient(to left, #1b1b1b, #0f0f0f);
 }
 .main__container .buttons--black:active {
-  background: linear-gradient(to left, #232526c7, #414345de);
+  background: linear-gradient(to left, #1b1b1bc9, #0f0f0fd2);
 }
 .main__container .buttons .buttons__change {
   padding: 10px;
@@ -128,6 +127,26 @@ body {
   color: white;
   cursor: pointer;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.card__0 {
+  background: linear-gradient(to left, #00bf40, #29f56d);
+}
+
+.card__1 {
+  background: linear-gradient(to top, #00c6ff, #0072ff);
+}
+
+.card__2 {
+  background: linear-gradient(to top, #cb2d3e, #ef473a);
+}
+
+.card__3 {
+  background: linear-gradient(315deg, #fbb034 0%, #ffb01d 74%);
+}
+
+.card__4 {
+  background: linear-gradient(to left, #1b1b1b, #0f0f0f);
 }
 
 /*# sourceMappingURL=style.css.map */
