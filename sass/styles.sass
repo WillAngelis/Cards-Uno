@@ -1,15 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&family=Roboto:wght@100;300;400;500;700&display=swap")
 
+// Font
 $primary-font: "Poppins", sans-serif
-$black-gradient : linear-gradient(127deg,rgba(29, 29, 29, 1) 0%,rgba(20, 20, 20, 1) 100%)
-$lemon-gradient : linear-gradient(to top,rgb(32, 223, 15) 0%,#00812b 100%)
-$green-gradient : linear-gradient(to bottom,rgb(16, 197, 0) 0%,rgba(8, 255, 90, 1) 100%)
-$black-shadow : 2px 5px 5px rgb(0,0,0,0.6)
-$margin : 1.25rem
-$color-secondary : rgba(14, 14, 14, 0.671)
 $color-white : rgb(255, 255, 255)
+$color-secondary : rgba(14, 14, 14, 0.671)
+
+// Colors
+$green-card : linear-gradient(to left, #00bf40, #29f56d)
+$red-card : linear-gradient(to top, #cb2d3e, #ef473a)
+$blue-card : linear-gradient(to top, #00c6ff, #0072ff)
+$purple-card : linear-gradient(to left, #7f00ff, #e100ff)
+$black-card : linear-gradient(to left, #000000, #434343)
+
+// Shadow
+$black-shadow : 2px 5px 5px rgb(0,0,0,0.6)
+
+// Align  
+$margin : 1.25rem
 $centralizar : center
-// reset css
+
+// Reset css
 html,
 body,
 p,
@@ -35,12 +45,12 @@ body,
 body 
   height: 100vh
   align-items: $centralizar
-  background: $black-gradient
+  background: $black-card
 
 .card__container
-  width: 14rem
+  width: 13rem
   height: 20rem
-  background: $green-gradient
+  background: $green-card
   border-radius: 1rem
   justify-content: space-around
   position: relative
@@ -80,18 +90,45 @@ body
 
 .main__container
   flex-direction: column
-  .btn__card-change
-    padding: 10px
-    margin-top: 10px
-    border-radius: 5px
-    border: 1px solid #ffffffb0
-    font-size: 1em
-    font-weight: 600
-    color: $color-white
-    background: none
-    cursor: pointer
-    box-shadow: $black-shadow
-  .btn__card-change:active
-    background: $color-secondary
+  .buttons
+    display: flex
+    justify-content: space-between
+    width: 13rem
+    &--green
+      background: #20ff58ee
+      &:active
+        background: #20ff58ab
+    &--blue
+      background: #2024ff
+      &:active
+        background: #2024ffa1
+    &--yellow
+      background: #fbff20
+      &:active
+        background: #fbff20d0
+    &--red
+      background: #ff2020
+      &:active
+        background: #ff2020c5
+    &--black
+      background: #000000c7
+      &:active
+        background: #141414c7
+    
+    .buttons__change
+      padding: 10px
+      border: none
+      margin: 20px 0
+      // border: 1px solid #ffffffb0
+      font-size: 1em
+      font-weight: 600
+      width: 35px
+      height: 35px
+      border-radius: 50%
+      color: $color-white
+      cursor: pointer
+      box-shadow: $black-shadow
+
+      
 
 

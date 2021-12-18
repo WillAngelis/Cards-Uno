@@ -25,13 +25,13 @@ body,
 body {
   height: 100vh;
   align-items: center;
-  background: linear-gradient(127deg, #1d1d1d 0%, #141414 100%);
+  background: linear-gradient(to left, #000000, #434343);
 }
 
 .card__container {
-  width: 14rem;
+  width: 13rem;
   height: 20rem;
-  background: linear-gradient(to bottom, #10c500 0%, #08ff5a 100%);
+  background: linear-gradient(to left, #00bf40, #29f56d);
   border-radius: 1rem;
   justify-content: space-around;
   position: relative;
@@ -81,20 +81,53 @@ body {
 .main__container {
   flex-direction: column;
 }
-.main__container .btn__card-change {
+.main__container .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 13rem;
+}
+.main__container .buttons--green {
+  background: #20ff58ee;
+}
+.main__container .buttons--green:active {
+  background: #20ff58ab;
+}
+.main__container .buttons--blue {
+  background: #2024ff;
+}
+.main__container .buttons--blue:active {
+  background: #2024ffa1;
+}
+.main__container .buttons--yellow {
+  background: #fbff20;
+}
+.main__container .buttons--yellow:active {
+  background: #fbff20d0;
+}
+.main__container .buttons--red {
+  background: #ff2020;
+}
+.main__container .buttons--red:active {
+  background: #ff2020c5;
+}
+.main__container .buttons--black {
+  background: #000000c7;
+}
+.main__container .buttons--black:active {
+  background: #141414c7;
+}
+.main__container .buttons .buttons__change {
   padding: 10px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: 1px solid #ffffffb0;
+  border: none;
+  margin: 20px 0;
   font-size: 1em;
   font-weight: 600;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
   color: white;
-  background: none;
   cursor: pointer;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
-}
-.main__container .btn__card-change:active {
-  background: rgba(14, 14, 14, 0.671);
 }
 
 /*# sourceMappingURL=style.css.map */
