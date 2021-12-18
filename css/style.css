@@ -25,7 +25,7 @@ body,
 body {
   height: 100vh;
   align-items: center;
-  background: linear-gradient(to left, #000000, #434343);
+  background: linear-gradient(to right, #000000, #1b1818);
 }
 
 .card__container {
@@ -87,34 +87,34 @@ body {
   width: 13rem;
 }
 .main__container .buttons--green {
-  background: #20ff58ee;
+  background: linear-gradient(to left, #00bf40, #29f56d);
 }
 .main__container .buttons--green:active {
-  background: #20ff58ab;
+  background: linear-gradient(to left, #00bf40, #29f56dc0);
 }
 .main__container .buttons--blue {
-  background: #2024ff;
+  background: linear-gradient(to top, #00c6ff, #0072ff);
 }
 .main__container .buttons--blue:active {
-  background: #2024ffa1;
+  background: linear-gradient(to top, #00c8ffd3, #0073ffde);
 }
 .main__container .buttons--yellow {
-  background: #fbff20;
+  background: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
 }
 .main__container .buttons--yellow:active {
-  background: #fbff20d0;
+  background: linear-gradient(315deg, #fbaf34d8 0%, #ffdd00d7 74%);
 }
 .main__container .buttons--red {
-  background: #ff2020;
+  background: linear-gradient(to top, #cb2d3e, #ef473a);
 }
 .main__container .buttons--red:active {
-  background: #ff2020c5;
+  background: linear-gradient(to top, #cb2d3de3, #ef463ada);
 }
 .main__container .buttons--black {
-  background: #000000c7;
+  background: linear-gradient(to left, #232526, #414345);
 }
 .main__container .buttons--black:active {
-  background: #141414c7;
+  background: linear-gradient(to left, #232526c7, #414345de);
 }
 .main__container .buttons .buttons__change {
   padding: 10px;

@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&family=Roboto:wght@100;300;400;500;700&display=swap")
 
-// Font
+// Font and Background
 $primary-font: "Poppins", sans-serif
 $color-white : rgb(255, 255, 255)
 $color-secondary : rgba(14, 14, 14, 0.671)
+$background : linear-gradient(to right, #000000, #1b1818)
 
-// Colors
+// Colors Buttons
 $green-card : linear-gradient(to left, #00bf40, #29f56d)
 $red-card : linear-gradient(to top, #cb2d3e, #ef473a)
 $blue-card : linear-gradient(to top, #00c6ff, #0072ff)
-$purple-card : linear-gradient(to left, #7f00ff, #e100ff)
-$black-card : linear-gradient(to left, #000000, #434343)
-
+$yellow-card : linear-gradient(315deg, #fbb034 0%, #ffdd00 74%)
+$black-card :linear-gradient(to left, #232526, #414345)
 // Shadow
-$black-shadow : 2px 5px 5px rgb(0,0,0,0.6)
+$shadow : 2px 5px 5px rgb(0,0,0,0.6)
+$green-shadow : linear-gradient(to left, #00bf40, #29f56dc0)
+$red-shadow : linear-gradient(to top, #cb2d3de3,#ef463ada)
+$blue-shadow : linear-gradient(to top, #00c8ffd3, #0073ffde)
+$yellow-shadow : linear-gradient(315deg, #fbaf34d8 0%, #ffdd00d7 74%)
+$black-shadow :linear-gradient(to left, #232526c7, #414345de)
 
 // Align  
 $margin : 1.25rem
@@ -45,7 +50,7 @@ body,
 body 
   height: 100vh
   align-items: $centralizar
-  background: $black-card
+  background: $background
 
 .card__container
   width: 13rem
@@ -54,7 +59,7 @@ body
   border-radius: 1rem
   justify-content: space-around
   position: relative
-  box-shadow: $black-shadow
+  box-shadow: $shadow
   .add__icon
     font-size: 1.85rem
   .number
@@ -95,25 +100,25 @@ body
     justify-content: space-between
     width: 13rem
     &--green
-      background: #20ff58ee
+      background: $green-card
       &:active
-        background: #20ff58ab
+        background: $green-shadow
     &--blue
-      background: #2024ff
+      background: $blue-card
       &:active
-        background: #2024ffa1
+        background: $blue-shadow
     &--yellow
-      background: #fbff20
+      background: $yellow-card
       &:active
-        background: #fbff20d0
+        background: $yellow-shadow
     &--red
-      background: #ff2020
+      background: $red-card
       &:active
-        background: #ff2020c5
+        background: $red-shadow
     &--black
-      background: #000000c7
+      background: $black-card
       &:active
-        background: #141414c7
+        background: $black-shadow
     
     .buttons__change
       padding: 10px
@@ -127,7 +132,7 @@ body
       border-radius: 50%
       color: $color-white
       cursor: pointer
-      box-shadow: $black-shadow
+      box-shadow: $shadow
 
       
 
