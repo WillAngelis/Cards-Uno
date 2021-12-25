@@ -26,7 +26,7 @@ body {
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, #000000, #1b1818);
+  background: linear-gradient(to right, #000000, #141313);
 }
 
 .card__container {
@@ -112,10 +112,10 @@ body {
   background: linear-gradient(to top, #cb2d3de3, #ef463ada);
 }
 .main__container .buttons--black {
-  background: linear-gradient(to left, #1b1b1b, #0f0f0f);
+  background: linear-gradient(to left, #2c2c2c, #1b1b1b);
 }
 .main__container .buttons--black:active {
-  background: linear-gradient(to left, #1b1b1bc9, #0f0f0fd2);
+  background: linear-gradient(to left, #272727c9, #1f1f1fd2);
 }
 .main__container .buttons .buttons__change {
   padding: 10px;
@@ -148,7 +148,7 @@ body {
 }
 
 .card__4 {
-  background: linear-gradient(to left, #1b1b1b, #0f0f0f);
+  background: linear-gradient(to left, #2c2c2c, #1b1b1b);
 }
 
 footer {
